@@ -31,7 +31,7 @@ const fetchData = async () => {
       </section>
     );
   }
-  console.log(apiData);
+  // console.log(apiData);
 
   const { company, dates, duties, id, title } = apiData[value];
 
@@ -46,7 +46,7 @@ const fetchData = async () => {
     <div className="jobs-center">
       {/* btn */}
       <div className="btn-container">
-        {apiData.map ((item) => {
+        {apiData.map ((item, index) => {
           return (
             <button 
               key={id}
